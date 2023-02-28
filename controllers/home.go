@@ -1,8 +1,8 @@
 package controllers
 
 import (
-	"net/http"
 	"example.com/go-server/views"
+	"net/http"
 )
 
 type homeData struct {

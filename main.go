@@ -1,8 +1,8 @@
 package main
 
 import (
-	"net/http"
 	"example.com/go-server/controllers"
+	"net/http"
 )
 
 func main() {
@@ -13,6 +13,6 @@ func main() {
 	// Serve static files from the "static" directory
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 
-  // Start the HTTP server
-  http.ListenAndServe(":8080", nil)
+	// Start the HTTP server
+	http.ListenAndServe(":8080", nil)
 }
